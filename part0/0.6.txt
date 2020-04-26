@@ -1,0 +1,8 @@
+title Creating a New Note
+
+note over browser:
+Browser adds note to list and redraws list
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server-->browser: 201 Response

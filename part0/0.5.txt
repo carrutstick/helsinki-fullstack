@@ -1,0 +1,19 @@
+title Creating a New Note
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa
+server-->browser: HTML Code
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+server-->browser: main.css
+server-->browser: main.js
+
+note over browser:
+JS code to fetch note data executes on browser
+end note
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+server-->browser: JSON data for notes
+
+note over browser:
+Browser executes event handler to render notes
+end note
